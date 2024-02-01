@@ -1,0 +1,14 @@
+./DS_Store
+*/.DS_Store
+bin/*
+obj/*
+.vscode
+data/*
+doc/*
+.DS_Store
+TD_moduleImage
+._.DS_Store
+build
+
+!*/.gitkeep 
+!doc/image.doxy
