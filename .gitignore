@@ -8,7 +8,7 @@ doc/*
 .DS_Store
 TD_moduleImage
 ._.DS_Store
-build
+build/*
 
 !*/.gitkeep 
 !doc/image.doxy
