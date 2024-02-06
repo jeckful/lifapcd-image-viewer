@@ -29,16 +29,16 @@ class Pixel{
         
         /**
         * Constructeur par défaut,
-        * Initialise red, green et blue à 0.
+        * @brief Initialise red, green et blue à 0.
         * */
         Pixel();
 
         /**
-        * Constructeur avec Dimensions
+        * Constructeur de Pixel
         * @param red la tonalité de rouge
         * @param green la tonalité de vert
         * @param blue la tonalité de bleu
-        * Et on initialise la couleur du pixel*/
+        * @brief on initialise la couleur du pixel*/
 
         Pixel(unsigned char red, unsigned char green, unsigned char blue);
 
@@ -51,9 +51,9 @@ class Pixel{
         unsigned char getBlue() const; ///<fonctions qui retournent les tonalités bleu d'un pixel, elles prennent aucun paramètre.
 
         /**
-        * fonction operator == pour gérer les égalités entre pixel pour la static void
+        * @brief fonction operator == pour gérer les égalités entre pixel pour la static void
         * @param other un objet 'Pixel' avec lequel on compare l'objet 'Pixel' actuel
-        * on retourne true ou false */
+        * @return true or false */
 
         bool operator==(const Pixel& other) const {
         return (r == other.r) && (g == other.g) && (b == other.b);
