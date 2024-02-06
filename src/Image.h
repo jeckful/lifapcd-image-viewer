@@ -16,7 +16,9 @@ class Image{
 
         ~Image();
 
-        Pixel getPix(int x, int y);
+        Pixel getPix(int x, int y) const;
+
+        Pixel * getPix(int x, int y);
 
         void setPix(int x, int y, Pixel couleur);
 
