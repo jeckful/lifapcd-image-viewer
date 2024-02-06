@@ -1,6 +1,7 @@
 #include "Pixel.h"
 
 
+
         
 Pixel::Pixel(){
     r = g = b = 0;
