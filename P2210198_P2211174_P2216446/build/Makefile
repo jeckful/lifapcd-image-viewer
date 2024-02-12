@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raphale/dev/lifapcd/team-kachow
+CMAKE_SOURCE_DIR = /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raphale/dev/lifapcd/team-kachow/build
+CMAKE_BINARY_DIR = /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raphale/dev/lifapcd/team-kachow/build/CMakeFiles /home/raphale/dev/lifapcd/team-kachow/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raphale/dev/lifapcd/team-kachow/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,30 +153,6 @@ src/Image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainTest.dir/build.make CMakeFiles/mainTest.dir/src/Image.cpp.s
 .PHONY : src/Image.cpp.s
 
-src/Pixel.o: src/Pixel.cpp.o
-.PHONY : src/Pixel.o
-
-# target to build an object file
-src/Pixel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainTest.dir/build.make CMakeFiles/mainTest.dir/src/Pixel.cpp.o
-.PHONY : src/Pixel.cpp.o
-
-src/Pixel.i: src/Pixel.cpp.i
-.PHONY : src/Pixel.i
-
-# target to preprocess a source file
-src/Pixel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainTest.dir/build.make CMakeFiles/mainTest.dir/src/Pixel.cpp.i
-.PHONY : src/Pixel.cpp.i
-
-src/Pixel.s: src/Pixel.cpp.s
-.PHONY : src/Pixel.s
-
-# target to generate assembly for a file
-src/Pixel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mainTest.dir/build.make CMakeFiles/mainTest.dir/src/Pixel.cpp.s
-.PHONY : src/Pixel.cpp.s
-
 src/mainTest.o: src/mainTest.cpp.o
 .PHONY : src/mainTest.o
 
@@ -213,9 +189,6 @@ help:
 	@echo "... src/Image.o"
 	@echo "... src/Image.i"
 	@echo "... src/Image.s"
-	@echo "... src/Pixel.o"
-	@echo "... src/Pixel.i"
-	@echo "... src/Pixel.s"
 	@echo "... src/mainTest.o"
 	@echo "... src/mainTest.i"
 	@echo "... src/mainTest.s"

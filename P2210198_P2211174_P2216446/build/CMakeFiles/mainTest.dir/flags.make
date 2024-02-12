@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/include
 
 CXX_FLAGS = 
 

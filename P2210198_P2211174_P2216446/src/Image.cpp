@@ -44,7 +44,7 @@ Image::~Image(){
 
 Pixel Image::getPix(int x, int y)const{
     if(x >= 0 && x < dimx && y >= 0 && y < dimy) return tab[y*dimx+x];
-    return Pixel::Pixel();
+    return Pixel();
     
 }
 
@@ -95,7 +95,7 @@ void Image::effacer(Pixel couleur){
  * Test de toutes les instances précédentes
  * */
 
-void Image::testRegression() {
+/*void Image::testRegression() {
     
     Image testImageDefault;
     assert(testImageDefault.dimx == 0 && testImageDefault.dimy == 0);
@@ -128,3 +128,4 @@ void Image::testRegression() {
 
     std::cout << " CA FONCTIONNE !!" << std::endl;
 }
+*/

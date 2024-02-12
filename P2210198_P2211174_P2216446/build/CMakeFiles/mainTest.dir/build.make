@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raphale/dev/lifapcd/team-kachow
+CMAKE_SOURCE_DIR = /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raphale/dev/lifapcd/team-kachow/build
+CMAKE_BINARY_DIR = /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mainTest.dir/depend.make
@@ -72,64 +72,48 @@ include CMakeFiles/mainTest.dir/flags.make
 CMakeFiles/mainTest.dir/src/mainTest.cpp.o: CMakeFiles/mainTest.dir/flags.make
 CMakeFiles/mainTest.dir/src/mainTest.cpp.o: ../src/mainTest.cpp
 CMakeFiles/mainTest.dir/src/mainTest.cpp.o: CMakeFiles/mainTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphale/dev/lifapcd/team-kachow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mainTest.dir/src/mainTest.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mainTest.dir/src/mainTest.cpp.o -MF CMakeFiles/mainTest.dir/src/mainTest.cpp.o.d -o CMakeFiles/mainTest.dir/src/mainTest.cpp.o -c /home/raphale/dev/lifapcd/team-kachow/src/mainTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mainTest.dir/src/mainTest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mainTest.dir/src/mainTest.cpp.o -MF CMakeFiles/mainTest.dir/src/mainTest.cpp.o.d -o CMakeFiles/mainTest.dir/src/mainTest.cpp.o -c /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/mainTest.cpp
 
 CMakeFiles/mainTest.dir/src/mainTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mainTest.dir/src/mainTest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphale/dev/lifapcd/team-kachow/src/mainTest.cpp > CMakeFiles/mainTest.dir/src/mainTest.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/mainTest.cpp > CMakeFiles/mainTest.dir/src/mainTest.cpp.i
 
 CMakeFiles/mainTest.dir/src/mainTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mainTest.dir/src/mainTest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphale/dev/lifapcd/team-kachow/src/mainTest.cpp -o CMakeFiles/mainTest.dir/src/mainTest.cpp.s
-
-CMakeFiles/mainTest.dir/src/Pixel.cpp.o: CMakeFiles/mainTest.dir/flags.make
-CMakeFiles/mainTest.dir/src/Pixel.cpp.o: ../src/Pixel.cpp
-CMakeFiles/mainTest.dir/src/Pixel.cpp.o: CMakeFiles/mainTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphale/dev/lifapcd/team-kachow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mainTest.dir/src/Pixel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mainTest.dir/src/Pixel.cpp.o -MF CMakeFiles/mainTest.dir/src/Pixel.cpp.o.d -o CMakeFiles/mainTest.dir/src/Pixel.cpp.o -c /home/raphale/dev/lifapcd/team-kachow/src/Pixel.cpp
-
-CMakeFiles/mainTest.dir/src/Pixel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mainTest.dir/src/Pixel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphale/dev/lifapcd/team-kachow/src/Pixel.cpp > CMakeFiles/mainTest.dir/src/Pixel.cpp.i
-
-CMakeFiles/mainTest.dir/src/Pixel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mainTest.dir/src/Pixel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphale/dev/lifapcd/team-kachow/src/Pixel.cpp -o CMakeFiles/mainTest.dir/src/Pixel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/mainTest.cpp -o CMakeFiles/mainTest.dir/src/mainTest.cpp.s
 
 CMakeFiles/mainTest.dir/src/Image.cpp.o: CMakeFiles/mainTest.dir/flags.make
 CMakeFiles/mainTest.dir/src/Image.cpp.o: ../src/Image.cpp
 CMakeFiles/mainTest.dir/src/Image.cpp.o: CMakeFiles/mainTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphale/dev/lifapcd/team-kachow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mainTest.dir/src/Image.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mainTest.dir/src/Image.cpp.o -MF CMakeFiles/mainTest.dir/src/Image.cpp.o.d -o CMakeFiles/mainTest.dir/src/Image.cpp.o -c /home/raphale/dev/lifapcd/team-kachow/src/Image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mainTest.dir/src/Image.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mainTest.dir/src/Image.cpp.o -MF CMakeFiles/mainTest.dir/src/Image.cpp.o.d -o CMakeFiles/mainTest.dir/src/Image.cpp.o -c /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/Image.cpp
 
 CMakeFiles/mainTest.dir/src/Image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mainTest.dir/src/Image.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphale/dev/lifapcd/team-kachow/src/Image.cpp > CMakeFiles/mainTest.dir/src/Image.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/Image.cpp > CMakeFiles/mainTest.dir/src/Image.cpp.i
 
 CMakeFiles/mainTest.dir/src/Image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mainTest.dir/src/Image.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphale/dev/lifapcd/team-kachow/src/Image.cpp -o CMakeFiles/mainTest.dir/src/Image.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/Image.cpp -o CMakeFiles/mainTest.dir/src/Image.cpp.s
 
 # Object files for target mainTest
 mainTest_OBJECTS = \
 "CMakeFiles/mainTest.dir/src/mainTest.cpp.o" \
-"CMakeFiles/mainTest.dir/src/Pixel.cpp.o" \
 "CMakeFiles/mainTest.dir/src/Image.cpp.o"
 
 # External object files for target mainTest
 mainTest_EXTERNAL_OBJECTS =
 
-mainTest: CMakeFiles/mainTest.dir/src/mainTest.cpp.o
-mainTest: CMakeFiles/mainTest.dir/src/Pixel.cpp.o
-mainTest: CMakeFiles/mainTest.dir/src/Image.cpp.o
-mainTest: CMakeFiles/mainTest.dir/build.make
-mainTest: CMakeFiles/mainTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raphale/dev/lifapcd/team-kachow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable mainTest"
+../bin/mainTest: CMakeFiles/mainTest.dir/src/mainTest.cpp.o
+../bin/mainTest: CMakeFiles/mainTest.dir/src/Image.cpp.o
+../bin/mainTest: CMakeFiles/mainTest.dir/build.make
+../bin/mainTest: CMakeFiles/mainTest.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/mainTest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mainTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/mainTest.dir/build: mainTest
+CMakeFiles/mainTest.dir/build: ../bin/mainTest
 .PHONY : CMakeFiles/mainTest.dir/build
 
 CMakeFiles/mainTest.dir/clean:
@@ -137,6 +121,6 @@ CMakeFiles/mainTest.dir/clean:
 .PHONY : CMakeFiles/mainTest.dir/clean
 
 CMakeFiles/mainTest.dir/depend:
-	cd /home/raphale/dev/lifapcd/team-kachow/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raphale/dev/lifapcd/team-kachow /home/raphale/dev/lifapcd/team-kachow /home/raphale/dev/lifapcd/team-kachow/build /home/raphale/dev/lifapcd/team-kachow/build /home/raphale/dev/lifapcd/team-kachow/build/CMakeFiles/mainTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446 /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446 /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles/mainTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mainTest.dir/depend
 

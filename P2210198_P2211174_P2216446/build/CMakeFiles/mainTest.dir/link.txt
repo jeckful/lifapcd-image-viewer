@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/mainTest.dir/src/mainTest.cpp.o CMakeFiles/mainTest.dir/src/Pixel.cpp.o CMakeFiles/mainTest.dir/src/Image.cpp.o -o mainTest 
+/usr/bin/c++ -rdynamic CMakeFiles/mainTest.dir/src/mainTest.cpp.o CMakeFiles/mainTest.dir/src/Image.cpp.o -o ../bin/mainTest   -L/home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/lib  -Wl,-rpath,/home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/lib -lSDL2 

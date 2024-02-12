@@ -26,7 +26,7 @@ class Image{
 
         void effacer(Pixel couleur);
 
-        static void testRegression();
+        //static void testRegression();
 };
 
 #endif

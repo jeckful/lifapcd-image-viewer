@@ -1,12 +1,10 @@
 file(REMOVE_RECURSE
+  "../bin/mainTest"
+  "../bin/mainTest.pdb"
   "CMakeFiles/mainTest.dir/src/Image.cpp.o"
   "CMakeFiles/mainTest.dir/src/Image.cpp.o.d"
-  "CMakeFiles/mainTest.dir/src/Pixel.cpp.o"
-  "CMakeFiles/mainTest.dir/src/Pixel.cpp.o.d"
   "CMakeFiles/mainTest.dir/src/mainTest.cpp.o"
   "CMakeFiles/mainTest.dir/src/mainTest.cpp.o.d"
-  "mainTest"
-  "mainTest.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
