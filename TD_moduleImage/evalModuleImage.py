@@ -321,7 +321,7 @@ else:
     msg("Verification Python 3.5 minimum OK")
 
 ###  VERIFICATION PARAMETRE DU SCRIPT = NOM ARCHIVE  ###
-if len(sys.argv) != 2:
+if len(sys.argv) < 2:
     msg("ERREUR : lancez le script avec l'archive en parametre: " + sys.argv[0] + " NUM_ETU1_NUM_ETU2.tgz")
     sys.exit(0)
 
@@ -1053,4 +1053,5 @@ if MODE == "PROF":
         persiste_etu_val(etu, 'note', 'w', NOTE)
 
 print("-----------------------FIN DU SCRIPT--------------------------")
-input('Appuyer sur Entree pour quitter...')
+if "--noinput" not in sys.argv:
+    input('Appuyer sur Entree pour quitter...')
