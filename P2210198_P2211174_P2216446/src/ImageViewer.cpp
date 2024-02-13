@@ -1,5 +1,6 @@
 #include "ImageViewer.h"
 #include <iostream>
+#include <SDL2/SDL.h>
 
 ImageViewer::ImageViewer() { // Définition du constructeur
     SDL_Init(SDL_INIT_VIDEO); // Initialisation de SDL
@@ -14,32 +15,62 @@ ImageViewer::~ImageViewer() { // Définition du destructeur
     SDL_Quit(); // Fermeture de SDL
 }
 
-void ImageViewer::afficher(const Image& im) { // Définition de la méthode pour afficher l'image
-    surface = SDL_CreateRGBSurfaceFrom((void*)im.getData(), im.getWidth(), im.getHeight(), 24, im.getWidth() * 3, 0, 0, 0, 0); // Conversion de l'image en une surface SDL
+void ImageViewer::afficher(const Image& im) {
+    surface = SDL_CreateRGBSurfaceFrom((void*)im.getTab(), im.getDimX(), im.getDimY(), 24, im.getDimX() * 3, 0, 0, 0, 0); // Conversion image en une surface SDL
 
-    texture = SDL_CreateTextureFromSurface(renderer, surface); // Création d'une texture SDL à partir de la surface
+   // Vérification surface
+    if (surface == nullptr) {
+        // Gestion de l'erreur 
+        return;
+    }
 
-    SDL_RenderClear(renderer); // Nettoyage du renderer
-    SDL_RenderCopy(renderer, texture, NULL, NULL); // Copie de la texture sur le renderer
-    SDL_RenderPresent(renderer); // Affichage du renderer
+    // Création de la texture SDL grace à la surface
+    texture = SDL_CreateTextureFromSurface(renderer, surface);
+    
+    // Vérification texture
+    if (texture == nullptr) {
+        // Gestion de l'erreur 
+        SDL_FreeSurface(surface);
+        return;
+    }
 
-    bool running = true; // Variable pour gérer l'exécution de la boucle d'événements
-    SDL_Event event; // Déclaration d'une structure d'événement SDL
-    while (running) { // Boucle principale pour gérer les événements
-        while (SDL_PollEvent(&event)) { // Boucle pour traiter tous les événements en attente
-            if (event.type == SDL_QUIT) { // Si l'utilisateur a demandé à quitter
-                running = false; // Met fin à la boucle principale
-            } else if (event.type == SDL_KEYDOWN) { // Si une touche du clavier a été enfoncée
-                if (event.key.keysym.sym == SDLK_ESCAPE) { // Si la touche ESCAPE a été enfoncée
-                    running = false; // Met fin à la boucle principale
-                } else if (event.key.keysym.sym == SDLK_t) { // Si la touche T a été enfoncée
-                    // Zoom avant (à implémenter)
-                } else if (event.key.keysym.sym == SDLK_g) { // Si la touche G a été enfoncée
-                    // Zoom arrière (à implémenter)
+    // Nettoyage du renderer
+    SDL_RenderClear(renderer);
+
+    // Copie de la texture sur le renderer
+    SDL_RenderCopy(renderer, texture, NULL, NULL);
+
+    // Affichage du renderer
+    SDL_RenderPresent(renderer);
+
+    // Boucle pour gérer les events
+    bool running = true;
+    SDL_Event event;
+    while (running) {
+        // Traitement des events
+        while (SDL_PollEvent(&event)) {
+            if (event.type == SDL_QUIT) {
+                running = false;
+            } else if (event.type == SDL_KEYDOWN) {
+                // switch pour les touches du clavier
+                switch (event.key.keysym.sym) {
+                    case SDLK_ESCAPE:
+                        running = false;
+                        break;
+                    case SDLK_t:
+                        // ZOOM AVANT à implémenter
+                        break;
+                    case SDLK_g:
+                        // ZOOM ARRIERE à implémenter
+                        break;
+                    default:
+                        break;
                 }
             }
         }
     }
 
-    SDL_FreeSurface(surface); // Libération de la surface SDL
+    // Libération de la texture et de la surface!
+    SDL_DestroyTexture(texture);
+    SDL_FreeSurface(surface);
 }

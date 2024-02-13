@@ -13,6 +13,12 @@ src/mainExemple.cpp
 src/Image.cpp
 )
 
-#target_link_libraries(affichage SDL2)
+add_executable(affichage
+src/mainAffichage.cpp
+src/Image.cpp
+src/ImageViewer.cpp
+)
+
+target_link_libraries(affichage SDL2)
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)

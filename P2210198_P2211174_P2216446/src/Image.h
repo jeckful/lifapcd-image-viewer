@@ -6,6 +6,7 @@
 using namespace std;
 
 class Image{
+    
     private:
         Pixel* tab;
         int dimx, dimy;
@@ -35,6 +36,10 @@ class Image{
         void ouvrir(const string &filename);
 
         void afficherConsole();
+
+        Pixel* getTab() const { return tab; }
+        int getDimX() const { return dimx; }
+        int getDimY() const { return dimy; }
 };
 
 #endif
