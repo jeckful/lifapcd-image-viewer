@@ -200,8 +200,8 @@ void Image::afficherConsole()
     {
         for (unsigned int x = 0; x < dimx; ++x)
         {
-            Pixel &pix = getPix(x, y);
-            cout << +pix.r << " " << +pix.g << " " << +pix.b << " ";
+            Pixel* pix = getPix(x, y);
+            cout << +pix->r << " " << +pix->g << " " << +pix->b << " ";
         }
         cout << endl;
     }
