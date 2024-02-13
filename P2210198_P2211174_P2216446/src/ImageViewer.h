@@ -10,7 +10,7 @@ private:
     SDL_Renderer* renderer; // Pointeur vers le renderer SDL
     SDL_Texture* texture; // Pointeur vers la texture SDL
     SDL_Surface* surface; // Pointeur vers la surface SDL (pour stocker l'image)
-
+    SDL_Rect zoneAffichee;
 
 public:
     // Constructeur qui initialise tout SDL2 et crée la fenêtre et le renderer

@@ -4,7 +4,7 @@
 
 ImageViewer::ImageViewer() { // Définition du constructeur
     SDL_Init(SDL_INIT_VIDEO); // Initialisation de SDL
-    window = SDL_CreateWindow("Image Viewer", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 200, 200, SDL_WINDOW_SHOWN); // Création de la fenêtre SDL
+    window = SDL_CreateWindow("Image Viewer", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 512, 512, SDL_WINDOW_SHOWN); // Création de la fenêtre SDL
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED); // Création du renderer SDL
 }
 
@@ -17,6 +17,12 @@ ImageViewer::~ImageViewer() { // Définition du destructeur
 
 void ImageViewer::afficher(const Image& im) {
     surface = SDL_CreateRGBSurfaceFrom((void*)im.getTab(), im.getDimX(), im.getDimY(), 24, im.getDimX() * 3, 0, 0, 0, 0); // Conversion image en une surface SDL
+
+    // Initialisation de la zone affichée avec la taille de l'image entière
+    zoneAffichee.x = 0;
+    zoneAffichee.y = 0;
+    zoneAffichee.w = im.getDimX(); // Largeur de l'image
+    zoneAffichee.h = im.getDimY(); // Hauteur de l'image
 
    // Vérification surface
     if (surface == nullptr) {
@@ -46,6 +52,8 @@ void ImageViewer::afficher(const Image& im) {
     // Boucle pour gérer les events
     bool running = true;
     SDL_Event event;
+    bool sizeChanged = false; // Indique si la taille de la zone affichée a été modifiée
+
     while (running) {
         // Traitement des events
         while (SDL_PollEvent(&event)) {
@@ -58,19 +66,37 @@ void ImageViewer::afficher(const Image& im) {
                         running = false;
                         break;
                     case SDLK_t:
-                        // ZOOM AVANT à implémenter
+                        // Zoom avant
+                        // Augmenter la taille de la zone affichée
+                        zoneAffichee.w += 10;
+                        zoneAffichee.h += 10;
+                        sizeChanged = true; // Indique que la taille a été modifiée
+
                         break;
                     case SDLK_g:
-                        // ZOOM ARRIERE à implémenter
+                        // Zoom arrière
+                        // Diminuer la taille de la zone affichée
+                        zoneAffichee.w -= 10;
+                        zoneAffichee.h -= 10;
+                        sizeChanged = true; // Indique que la taille a été modifiée
+
                         break;
                     default:
                         break;
                 }
             }
         }
+    
+        if (sizeChanged) {
+            SDL_RenderClear(renderer);
+            SDL_RenderCopy(renderer, texture, &zoneAffichee, NULL);
+            SDL_RenderPresent(renderer);
+            sizeChanged = false; // Réinitialise la variable après le rendu
+        }
+
+        SDL_Delay(10); // Ajoute une pause de 10 millisecondes pour libérer le processeur
     }
 
-    // Libération de la texture et de la surface!
-    SDL_DestroyTexture(texture);
     SDL_FreeSurface(surface);
+
 }

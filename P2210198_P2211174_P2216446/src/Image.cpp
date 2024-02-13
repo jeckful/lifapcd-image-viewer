@@ -154,7 +154,7 @@ void Image::ouvrir(const string &filename)
 {
     ifstream fichier(filename.c_str()); // Ouverture du fichier en lecture
     assert(fichier.is_open()); // Vérification que le fichier est ouvert avec succès
-    char r, g, b; // Variables temporaires pour stocker les composantes RGB
+    int r, g, b; // Variables temporaires pour stocker les composantes RGB
     string mot; // Variable temporaire pour stocker les mots lus du fichier
     dimx = dimy = 0; // Réinitialisation des dimensions de l'image
     fichier >> mot >> dimx >> dimy >> mot; // Lecture de l'en-tête du fichier PPM et des dimensions de l'image
