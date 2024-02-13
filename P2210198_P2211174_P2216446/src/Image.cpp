@@ -97,16 +97,17 @@ void Image::effacer(Pixel couleur){
  * */
 
 void Image::testRegression() {
-    
+    using namespace std;
+
     Image testImageDefault;
     assert(testImageDefault.dimx == 0 && testImageDefault.dimy == 0);
-    std::cout << "constructeur par default OK!" << std::endl;
+    cout << "constructeur par default OK!" << endl;
 
     
     Image imageTest(3, 4);
 
     assert(imageTest.dimx == 3 && imageTest.dimy == 4);
-    std::cout << "constructeur OK!." << std::endl;
+    cout << "constructeur OK!." << endl;
 
     Pixel* PixelPtr;
     
@@ -121,7 +122,7 @@ void Image::testRegression() {
         }
         
     }
-    std::cout << "effacer OK!" << std::endl;
+    cout << "effacer OK!" << endl;
 
     
 
@@ -134,18 +135,18 @@ void Image::testRegression() {
     assert(pixel2 != nullptr); 
     assert(pixel2->r == 255 && pixel2->g == 0 && pixel2->b == 0); 
 
-    std::cout << "dessinerRectangle OK!" << std::endl;
+    cout << "dessinerRectangle OK!" << endl;
 
     imageTest.setPix(1, 1, Pixel(0, 0, 255));  
     Pixel* modifiedPixelPtr = imageTest.getPix(1, 1); 
     assert(modifiedPixelPtr != nullptr); 
     Pixel modifiedPixel = *modifiedPixelPtr; 
     assert(modifiedPixel.r == 0 && modifiedPixel.g == 0 && modifiedPixel.b == 255);
-    std::cout << "getPix et setPix OK!" << std::endl;
+    cout << "getPix et setPix OK!" << endl;
             
     
 
-    std::cout << " CA FONCTIONNE !!" << std::endl;
+    cout << " CA FONCTIONNE !!" << endl;
 
 }
 
