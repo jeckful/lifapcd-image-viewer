@@ -2,7 +2,8 @@
 #define _IMAGE_H
 
 #include "Pixel.h"
-
+#include <string>
+using namespace std;
 
 class Image{
     private:
@@ -10,6 +11,7 @@ class Image{
         int dimx, dimy;
 
     public: 
+        
         Image();
 
         Image(int dimensionX, int dimensionY);
@@ -26,7 +28,13 @@ class Image{
 
         void effacer(Pixel couleur);
 
-        //static void testRegression();
+        static void testRegression();
+
+        void sauver(string &filename) const;
+
+        void ouvrir(const string &filename);
+
+        void afficherConsole();
 };
 
 #endif

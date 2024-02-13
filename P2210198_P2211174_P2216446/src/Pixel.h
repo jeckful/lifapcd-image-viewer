@@ -19,14 +19,9 @@
 
 
 struct Pixel{
-    
-
-
 
         unsigned char r, g, b; ///< 3 unsigned char nommé r, g et b pour faire varier la couleur du pixel. Utilisation de unsigned char car valeur limité à 256 valeurs.
-    
-    
-        
+
         /**
         * Constructeur par défaut,
         * @brief Initialise red, green et blue à 0.
@@ -34,10 +29,6 @@ struct Pixel{
         Pixel() : r(0), g(0), b(0) {}
 
         Pixel(unsigned char nr, unsigned char ng, unsigned char nb) : r(nr), g(ng), b(nb) {}
-
-
-
-    
 
 };
 
