@@ -2,7 +2,7 @@
 #include <cassert>
 #include "Image.h"
 #include "Pixel.h"
-
+#include <fstream>
 
 /**
  * Constructeur par défaut,
@@ -150,8 +150,9 @@ void Image::testRegression() {
 
 }
 
-void Image::sauver(const string &filename) const
+void Image::sauver(string &filename) const
 {
+    using namespace std;
     ofstream fichier(filename.c_str());
     assert(fichier.is_open());
     fichier << "P3" << endl;
@@ -160,8 +161,9 @@ void Image::sauver(const string &filename) const
     for (unsigned int y = 0; y < dimy; ++y)
         for (unsigned int x = 0; x < dimx; ++x)
         {
-            Pixel &pix = getPix(x++, y);
+            Pixel pix = getPix(x, y);
             fichier << +pix.r << " " << +pix.g << " " << +pix.b << " ";
+            ++x;
         }
     cout << "Sauvegarde de l'image " << filename << " ... OK\n";
     fichier.close();
@@ -183,9 +185,9 @@ void Image::ouvrir(const string &filename)
         for (unsigned int x = 0; x < dimx; ++x)
         {
             fichier >> r >> b >> g;
-            getPix(x, y).r = r;
-            getPix(x, y).g = g;
-            getPix(x, y).b = b;
+            getPix(x, y)->r = r;
+            getPix(x, y)->g = g;
+            getPix(x, y)->b = b;
         }
     fichier.close();
     cout << "Lecture de l'image " << filename << " ... OK\n";
