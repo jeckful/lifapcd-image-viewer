@@ -3,6 +3,6 @@
 #include <iostream>
 
 int main() {
-   // Image::testRegression();
+    Image::testRegression();
     return 0;
 }

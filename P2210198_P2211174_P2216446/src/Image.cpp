@@ -95,7 +95,7 @@ void Image::effacer(Pixel couleur){
  * Test de toutes les instances précédentes
  * */
 
-/*void Image::testRegression() {
+void Image::testRegression() {
     
     Image testImageDefault;
     assert(testImageDefault.dimx == 0 && testImageDefault.dimy == 0);
@@ -107,25 +107,43 @@ void Image::effacer(Pixel couleur){
     assert(imageTest.dimx == 3 && imageTest.dimy == 4);
     std::cout << "constructeur OK!." << std::endl;
 
+    Pixel* PixelPtr;
+    
     imageTest.effacer(Pixel(255, 0, 0));  
     for (int i = 0; i < imageTest.dimx; ++i) {
         for (int j = 0; j < imageTest.dimy; ++j) {
-            assert(imageTest.getPix(i, j) == Pixel(255, 0, 0));
+            PixelPtr = imageTest.getPix(i, j); 
+            assert(PixelPtr != nullptr); 
+            Pixel Pixel = *PixelPtr; 
+            assert(Pixel.r == 255 && Pixel.g == 0 && Pixel.b == 0);
+            
         }
+        
     }
     std::cout << "effacer OK!" << std::endl;
 
+    
+
     imageTest.dessinerRectangle(1, 2, 1, 2, Pixel(0, 255, 0)); 
-    assert(imageTest.getPix(0, 0) == Pixel(255, 0, 0));
-    assert(imageTest.getPix(1, 1) == Pixel(0, 255, 0));
-    assert(imageTest.getPix(2, 2) == Pixel(255, 0, 0));
+    Pixel* pixel1 = imageTest.getPix(1, 1); 
+    assert(pixel1 != nullptr); 
+    assert(pixel1->r == 0 && pixel1->g == 255 && pixel1->b == 0); 
+
+    Pixel* pixel2 = imageTest.getPix(2, 2); 
+    assert(pixel2 != nullptr); 
+    assert(pixel2->r == 255 && pixel2->g == 0 && pixel2->b == 0); 
+
     std::cout << "dessinerRectangle OK!" << std::endl;
 
     imageTest.setPix(1, 1, Pixel(0, 0, 255));  
-    assert(imageTest.getPix(1, 1) == Pixel(0, 0, 255));
+    Pixel* modifiedPixelPtr = imageTest.getPix(1, 1); 
+    assert(modifiedPixelPtr != nullptr); 
+    Pixel modifiedPixel = *modifiedPixelPtr; 
+    assert(modifiedPixel.r == 0 && modifiedPixel.g == 0 && modifiedPixel.b == 255);
     std::cout << "getPix et setPix OK!" << std::endl;
-
+            
+    
 
     std::cout << " CA FONCTIONNE !!" << std::endl;
+
 }
-*/
