@@ -10,6 +10,7 @@ int main() {
  image1.dessinerRectangle(6, 8, 26, 21, rouge);
  image1.setPix(16,14,jaune);
  image1.setPix(46,33,jaune);
+ image1.afficherConsole();
  image1.sauver("./data/image1.ppm");
  Image image2;
  image2.ouvrir("./data/image1.ppm");

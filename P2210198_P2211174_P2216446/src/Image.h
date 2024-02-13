@@ -30,7 +30,7 @@ class Image{
 
         static void testRegression();
 
-        void sauver(string &filename) const;
+        void sauver(const string &filename) const;
 
         void ouvrir(const string &filename);
 
