@@ -4,7 +4,8 @@
 
 int main (int argc, char** argv) {
  Image image (61,61);
- Pixel blanc (255, 255, 255);
+ image.ouvrir("./data/image1.ppm");
+ /*Pixel blanc (255, 255, 255);
  Pixel bleu (39, 114, 190);
  Pixel noir (0, 0, 0);
  Pixel rouge (227, 20, 26);
@@ -20,7 +21,7 @@ int main (int argc, char** argv) {
  image.dessinerRectangle(13,29,28,44,jaune);
  image.dessinerRectangle(15,31,26,42,blanc);
  image.dessinerRectangle(33,29,48,44,vert);
- image.dessinerRectangle(35,31,46,42,blanc);
+ image.dessinerRectangle(35,31,46,42,blanc);*/
  ImageViewer imview;
  imview.afficher(image);
  return 0;

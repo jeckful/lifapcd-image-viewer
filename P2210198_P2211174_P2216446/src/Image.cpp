@@ -158,7 +158,7 @@ void Image::ouvrir(const string &filename)
     string mot; // Variable temporaire pour stocker les mots lus du fichier
     dimx = dimy = 0; // Réinitialisation des dimensions de l'image
     fichier >> mot >> dimx >> dimy >> mot; // Lecture de l'en-tête du fichier PPM et des dimensions de l'image
-    assert(dimx > 0 && dimy > 0); // Vérification que les dimensions sont valides
+    assert(dimx >= 0 && dimy >= 0); // Vérification que les dimensions sont valides
     if (tab != nullptr)
         delete[] tab; // Libération de la mémoire si le tableau existe déjà
     tab = new Pixel[dimx * dimy]; // Allocation d'un nouveau tableau de pixels
