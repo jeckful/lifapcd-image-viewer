@@ -9,6 +9,7 @@
  * Initialise les dimensions à 0.
  * */
 Image::Image(){
+    tab = nullptr;
     dimx = 0; // Initialisation de dimx à 0
     dimy = 0; // Initialisation de dimy à 0
 }
@@ -31,7 +32,7 @@ Image::Image(int dimensionX, int dimensionY){
  * Désallocation du tableau et mise à 0 des dimensions
  * */
 Image::~Image(){
-    delete[] tab; // Désallocation du tableau de pixels
+    if(tab != nullptr) delete[] tab; // Désallocation du tableau de pixels
     dimx = 0; // Réinitialisation de dimx à 0
     dimy = 0; // Réinitialisation de dimy à 0
 }
@@ -52,8 +53,8 @@ Pixel Image::getPix(int x, int y)const{
  * @param x y des entiers
  * */
 Pixel * Image::getPix(int x, int y){
-    if(x >= 0 && x < dimx && y >= 0 && y < dimy) return &tab[y*dimx+x]; // Vérification des limites et retourne un pointeur vers le pixel correspondant
-    return nullptr; // Retourne nullptr si les paramètres ne sont pas valides
+    assert(x >= 0 && x < dimx && y >= 0 && y < dimy); // Vérification des limites et retourne un pointeur vers le pixel correspondant
+    return &tab[y*dimx+x]; //retourne un pointeur vers le pixel correspondant
 }
 
 /**
@@ -71,8 +72,8 @@ void Image::setPix(int x, int y, Pixel couleur){
  * entre @param Xmin, @param YMin et @param XMax, @param YMax
  * */
 void Image::dessinerRectangle(int Xmin, int Xmax, int Ymin, int Ymax, Pixel couleur){
-    for(int i = Xmin; i < Xmax; i++ ){
-        for(int j = Ymin; j < Ymax; j++ ){
+    for(int i = Xmin; i <= Xmax; i++ ){
+        for(int j = Ymin; j <= Ymax; j++ ){
             setPix(i, j, couleur); // Dessine un rectangle en appliquant la couleur spécifiée à tous les pixels compris entre les coordonnées spécifiées
         }
     }
@@ -134,7 +135,7 @@ void Image::testRegression() {
 void Image::sauver(const std::string &filename) const
 {
     using namespace std; // Utilisation de l'espace de noms standard
-    
+
     ofstream fichier(filename.c_str()); // Ouverture du fichier en écriture
     assert(fichier.is_open()); // Vérification que le fichier est ouvert avec succès
     fichier << "P3" << endl; // Écriture de l'en-tête du fichier PPM
