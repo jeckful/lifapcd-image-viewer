@@ -3,7 +3,7 @@
 
 #include "Pixel.h"
 #include <string>
-using namespace std;
+
 
 class Image{
     
@@ -31,13 +31,13 @@ class Image{
 
         static void testRegression();
 
-        void sauver(const string &filename) const;
+        void sauver(const std::string &filename) const;
 
-        void ouvrir(const string &filename);
+        void ouvrir(const std::string &filename);
 
         void afficherConsole();
 
-        Pixel* getTab() const { return tab; }
+        const Pixel* getTab() const { return tab; }
         int getDimX() const { return dimx; }
         int getDimY() const { return dimy; }
 };

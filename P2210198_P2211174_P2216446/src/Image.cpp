@@ -131,9 +131,10 @@ void Image::testRegression() {
     cout << " CA FONCTIONNE !!" << endl; // Affichage d'un message global indiquant que tous les tests ont réussi
 }
 
-void Image::sauver(const string &filename) const
+void Image::sauver(const std::string &filename) const
 {
     using namespace std; // Utilisation de l'espace de noms standard
+    
     ofstream fichier(filename.c_str()); // Ouverture du fichier en écriture
     assert(fichier.is_open()); // Vérification que le fichier est ouvert avec succès
     fichier << "P3" << endl; // Écriture de l'en-tête du fichier PPM
@@ -150,12 +151,14 @@ void Image::sauver(const string &filename) const
     fichier.close(); // Fermeture du fichier
 }
 
-void Image::ouvrir(const string &filename)
+void Image::ouvrir(const std::string &filename)
 {
+    using namespace std;
+
     ifstream fichier(filename.c_str()); // Ouverture du fichier en lecture
     assert(fichier.is_open()); // Vérification que le fichier est ouvert avec succès
     int r, g, b; // Variables temporaires pour stocker les composantes RGB
-    string mot; // Variable temporaire pour stocker les mots lus du fichier
+    std::string mot; // Variable temporaire pour stocker les mots lus du fichier
     dimx = dimy = 0; // Réinitialisation des dimensions de l'image
     fichier >> mot >> dimx >> dimy >> mot; // Lecture de l'en-tête du fichier PPM et des dimensions de l'image
     assert(dimx >= 0 && dimy >= 0); // Vérification que les dimensions sont valides
@@ -176,6 +179,7 @@ void Image::ouvrir(const string &filename)
 
 void Image::afficherConsole()
 {
+    using namespace std;
     cout << dimx << " " << dimy << endl; // Affichage des dimensions de l'image
     for (unsigned int y = 0; y < dimy; ++y) // Parcours des lignes de l'image
     {
