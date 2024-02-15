@@ -4,6 +4,15 @@
 #include <SDL2/SDL.h>
 #include "Image.h"
 
+/** 
+* @file ImageViewer.h
+* @brief fichier .h de la classe "ImageViewer"
+* @author GOSSET Raphaël
+* @author LANGE Théo
+* @author LAASSIBI Yanis
+* @date 2024
+*/
+
 class ImageViewer {
 private:
     SDL_Window* window; // Pointeur vers la fenêtre SDL

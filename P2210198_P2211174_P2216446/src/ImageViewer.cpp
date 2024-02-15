@@ -2,21 +2,42 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 
-ImageViewer::ImageViewer() { // Définition du constructeur
+/** 
+* @file ImageViewer.cpp
+* @brief fichier .cpp de la classe "ImageViewer"
+* @author GOSSET Raphaël
+* @author LANGE Théo
+* @author LAASSIBI Yanis
+* @date 2024
+*/
+
+/**
+ * @brief Constructeur de la classe ImageViewer.
+ * Initialise SDL et crée une fenêtre et un renderer.
+ */
+ImageViewer::ImageViewer() {
     SDL_Init(SDL_INIT_VIDEO); // Initialisation de SDL
     window = SDL_CreateWindow("Image Viewer", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 512, 512, SDL_WINDOW_SHOWN); // Création de la fenêtre SDL
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED); // Création du renderer SDL
 }
 
-ImageViewer::~ImageViewer() { // Définition du destructeur
+/**
+ * @brief Destructeur de la classe ImageViewer.
+ * Libère la mémoire des ressources SDL.
+ */
+ImageViewer::~ImageViewer() {
     SDL_DestroyTexture(texture); // Libération de la texture SDL
     SDL_DestroyRenderer(renderer); // Libération du renderer SDL
     SDL_DestroyWindow(window); // Libération de la fenêtre SDL
     SDL_Quit(); // Fermeture de SDL
 }
 
+/**
+ * @brief Affiche une image sur la fenêtre SDL.
+ * @param im L'image à afficher.
+ */
 void ImageViewer::afficher(const Image& im) {
-    surface = SDL_CreateRGBSurfaceFrom((void*)im.getTab(), im.getDimX(), im.getDimY(), 24, im.getDimX() * 3,0xFF0000, 0x00FF00, 0x0000FF, 0); // Conversion image en une surface SDL
+    surface = SDL_CreateRGBSurfaceFrom((void*)im.getTab(), im.getDimX(), im.getDimY(), 24, im.getDimX() * 3,255, 255, 255, 0); // Conversion image en une surface SDL 
 
     // Initialisation de la zone affichée avec la taille de l'image entière
     zoneAffichee.x = 0;
@@ -24,7 +45,7 @@ void ImageViewer::afficher(const Image& im) {
     zoneAffichee.w = im.getDimX(); // Largeur de l'image
     zoneAffichee.h = im.getDimY(); // Hauteur de l'image
 
-   // Vérification surface
+    // Vérification surface
     if (surface == nullptr) {
         // Gestion de l'erreur 
         return;
@@ -71,7 +92,6 @@ void ImageViewer::afficher(const Image& im) {
                         zoneAffichee.w += 10;
                         zoneAffichee.h += 10;
                         sizeChanged = true; // Indique que la taille a été modifiée
-
                         break;
                     case SDLK_g:
                         // Zoom arrière
@@ -79,7 +99,6 @@ void ImageViewer::afficher(const Image& im) {
                         zoneAffichee.w -= 10;
                         zoneAffichee.h -= 10;
                         sizeChanged = true; // Indique que la taille a été modifiée
-
                         break;
                     default:
                         break;
