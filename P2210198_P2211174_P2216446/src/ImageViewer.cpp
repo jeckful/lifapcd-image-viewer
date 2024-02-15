@@ -16,7 +16,7 @@ ImageViewer::~ImageViewer() { // Définition du destructeur
 }
 
 void ImageViewer::afficher(const Image& im) {
-    surface = SDL_CreateRGBSurfaceFrom((void*)im.getTab(), im.getDimX(), im.getDimY(), 24, im.getDimX() * 3,0xFF0000, 0x00FF00, 0x0000FF, 0); // Conversion image en une surface SDL 
+    surface = SDL_CreateRGBSurfaceFrom((void*)im.getTab(), im.getDimX(), im.getDimY(), 24, im.getDimX() * 3,0xFF0000, 0x00FF00, 0x0000FF, 0); // Conversion image en une surface SDL
 
     // Initialisation de la zone affichée avec la taille de l'image entière
     zoneAffichee.x = 0;
