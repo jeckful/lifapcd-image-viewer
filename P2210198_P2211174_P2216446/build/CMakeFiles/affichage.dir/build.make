@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446
+CMAKE_SOURCE_DIR = /home/yanis/team-kachow/P2210198_P2211174_P2216446
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build
+CMAKE_BINARY_DIR = /home/yanis/team-kachow/P2210198_P2211174_P2216446/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/affichage.dir/depend.make
@@ -72,44 +72,44 @@ include CMakeFiles/affichage.dir/flags.make
 CMakeFiles/affichage.dir/src/mainAffichage.cpp.o: CMakeFiles/affichage.dir/flags.make
 CMakeFiles/affichage.dir/src/mainAffichage.cpp.o: ../src/mainAffichage.cpp
 CMakeFiles/affichage.dir/src/mainAffichage.cpp.o: CMakeFiles/affichage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/affichage.dir/src/mainAffichage.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/affichage.dir/src/mainAffichage.cpp.o -MF CMakeFiles/affichage.dir/src/mainAffichage.cpp.o.d -o CMakeFiles/affichage.dir/src/mainAffichage.cpp.o -c /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/mainAffichage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/affichage.dir/src/mainAffichage.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/affichage.dir/src/mainAffichage.cpp.o -MF CMakeFiles/affichage.dir/src/mainAffichage.cpp.o.d -o CMakeFiles/affichage.dir/src/mainAffichage.cpp.o -c /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/mainAffichage.cpp
 
 CMakeFiles/affichage.dir/src/mainAffichage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/affichage.dir/src/mainAffichage.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/mainAffichage.cpp > CMakeFiles/affichage.dir/src/mainAffichage.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/mainAffichage.cpp > CMakeFiles/affichage.dir/src/mainAffichage.cpp.i
 
 CMakeFiles/affichage.dir/src/mainAffichage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/affichage.dir/src/mainAffichage.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/mainAffichage.cpp -o CMakeFiles/affichage.dir/src/mainAffichage.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/mainAffichage.cpp -o CMakeFiles/affichage.dir/src/mainAffichage.cpp.s
 
 CMakeFiles/affichage.dir/src/Image.cpp.o: CMakeFiles/affichage.dir/flags.make
 CMakeFiles/affichage.dir/src/Image.cpp.o: ../src/Image.cpp
 CMakeFiles/affichage.dir/src/Image.cpp.o: CMakeFiles/affichage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/affichage.dir/src/Image.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/affichage.dir/src/Image.cpp.o -MF CMakeFiles/affichage.dir/src/Image.cpp.o.d -o CMakeFiles/affichage.dir/src/Image.cpp.o -c /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/Image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/affichage.dir/src/Image.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/affichage.dir/src/Image.cpp.o -MF CMakeFiles/affichage.dir/src/Image.cpp.o.d -o CMakeFiles/affichage.dir/src/Image.cpp.o -c /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/Image.cpp
 
 CMakeFiles/affichage.dir/src/Image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/affichage.dir/src/Image.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/Image.cpp > CMakeFiles/affichage.dir/src/Image.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/Image.cpp > CMakeFiles/affichage.dir/src/Image.cpp.i
 
 CMakeFiles/affichage.dir/src/Image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/affichage.dir/src/Image.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/Image.cpp -o CMakeFiles/affichage.dir/src/Image.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/Image.cpp -o CMakeFiles/affichage.dir/src/Image.cpp.s
 
 CMakeFiles/affichage.dir/src/ImageViewer.cpp.o: CMakeFiles/affichage.dir/flags.make
 CMakeFiles/affichage.dir/src/ImageViewer.cpp.o: ../src/ImageViewer.cpp
 CMakeFiles/affichage.dir/src/ImageViewer.cpp.o: CMakeFiles/affichage.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/affichage.dir/src/ImageViewer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/affichage.dir/src/ImageViewer.cpp.o -MF CMakeFiles/affichage.dir/src/ImageViewer.cpp.o.d -o CMakeFiles/affichage.dir/src/ImageViewer.cpp.o -c /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/ImageViewer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/affichage.dir/src/ImageViewer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/affichage.dir/src/ImageViewer.cpp.o -MF CMakeFiles/affichage.dir/src/ImageViewer.cpp.o.d -o CMakeFiles/affichage.dir/src/ImageViewer.cpp.o -c /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/ImageViewer.cpp
 
 CMakeFiles/affichage.dir/src/ImageViewer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/affichage.dir/src/ImageViewer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/ImageViewer.cpp > CMakeFiles/affichage.dir/src/ImageViewer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/ImageViewer.cpp > CMakeFiles/affichage.dir/src/ImageViewer.cpp.i
 
 CMakeFiles/affichage.dir/src/ImageViewer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/affichage.dir/src/ImageViewer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/ImageViewer.cpp -o CMakeFiles/affichage.dir/src/ImageViewer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/ImageViewer.cpp -o CMakeFiles/affichage.dir/src/ImageViewer.cpp.s
 
 # Object files for target affichage
 affichage_OBJECTS = \
@@ -125,7 +125,7 @@ affichage_EXTERNAL_OBJECTS =
 ../bin/affichage: CMakeFiles/affichage.dir/src/ImageViewer.cpp.o
 ../bin/affichage: CMakeFiles/affichage.dir/build.make
 ../bin/affichage: CMakeFiles/affichage.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/affichage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/affichage"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/affichage.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -137,6 +137,6 @@ CMakeFiles/affichage.dir/clean:
 .PHONY : CMakeFiles/affichage.dir/clean
 
 CMakeFiles/affichage.dir/depend:
-	cd /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446 /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446 /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles/affichage.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yanis/team-kachow/P2210198_P2211174_P2216446/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yanis/team-kachow/P2210198_P2211174_P2216446 /home/yanis/team-kachow/P2210198_P2211174_P2216446 /home/yanis/team-kachow/P2210198_P2211174_P2216446/build /home/yanis/team-kachow/P2210198_P2211174_P2216446/build /home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles/affichage.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/affichage.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446
+CMAKE_SOURCE_DIR = /home/yanis/team-kachow/P2210198_P2211174_P2216446
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build
+CMAKE_BINARY_DIR = /home/yanis/team-kachow/P2210198_P2211174_P2216446/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles /home/yanis/team-kachow/P2210198_P2211174_P2216446/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -154,6 +154,19 @@ affichage: cmake_check_build_system
 affichage/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/affichage.dir/build.make CMakeFiles/affichage.dir/build
 .PHONY : affichage/fast
+
+#=============================================================================
+# Target rules for targets named doc
+
+# Build rule for target.
+doc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doc
+.PHONY : doc
+
+# fast build rule for target.
+doc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
+.PHONY : doc/fast
 
 src/Image.o: src/Image.cpp.o
 .PHONY : src/Image.o
@@ -289,6 +302,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... doc"
 	@echo "... affichage"
 	@echo "... exemple"
 	@echo "... test"

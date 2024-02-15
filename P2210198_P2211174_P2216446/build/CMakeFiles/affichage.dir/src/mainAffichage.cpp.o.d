@@ -1,8 +1,8 @@
 CMakeFiles/affichage.dir/src/mainAffichage.cpp.o: \
- /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/mainAffichage.cpp \
+ /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/mainAffichage.cpp \
  /usr/include/stdc-predef.h \
- /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/Image.h \
- /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/Pixel.h \
+ /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/Image.h \
+ /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/Pixel.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -131,7 +131,7 @@ CMakeFiles/affichage.dir/src/mainAffichage.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/ImageViewer.h \
+ /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/ImageViewer.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \

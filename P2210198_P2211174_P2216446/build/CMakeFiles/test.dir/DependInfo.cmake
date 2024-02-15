@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/Image.cpp" "CMakeFiles/test.dir/src/Image.cpp.o" "gcc" "CMakeFiles/test.dir/src/Image.cpp.o.d"
-  "/home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/mainTest.cpp" "CMakeFiles/test.dir/src/mainTest.cpp.o" "gcc" "CMakeFiles/test.dir/src/mainTest.cpp.o.d"
+  "/home/yanis/team-kachow/P2210198_P2211174_P2216446/src/Image.cpp" "CMakeFiles/test.dir/src/Image.cpp.o" "gcc" "CMakeFiles/test.dir/src/Image.cpp.o.d"
+  "/home/yanis/team-kachow/P2210198_P2211174_P2216446/src/mainTest.cpp" "CMakeFiles/test.dir/src/mainTest.cpp.o" "gcc" "CMakeFiles/test.dir/src/mainTest.cpp.o.d"
   )
 
 # Targets to which this target links.

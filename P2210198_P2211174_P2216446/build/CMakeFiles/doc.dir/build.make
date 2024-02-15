@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446
+CMAKE_SOURCE_DIR = /home/yanis/team-kachow/P2210198_P2211174_P2216446
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build
+CMAKE_BINARY_DIR = /home/yanis/team-kachow/P2210198_P2211174_P2216446/build
 
 # Utility rule file for doc.
 
@@ -67,8 +67,8 @@ include CMakeFiles/doc.dir/compiler_depend.make
 include CMakeFiles/doc.dir/progress.make
 
 CMakeFiles/doc:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating documentation with Doxygen"
-	cd /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446 && doxygen Doxyfile
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating documentation with Doxygen"
+	cd /home/yanis/team-kachow/P2210198_P2211174_P2216446 && doxygen /home/yanis/team-kachow/P2210198_P2211174_P2216446/doc/Doxyfile
 
 doc: CMakeFiles/doc
 doc: CMakeFiles/doc.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/doc.dir/clean:
 .PHONY : CMakeFiles/doc.dir/clean
 
 CMakeFiles/doc.dir/depend:
-	cd /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446 /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446 /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles/doc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yanis/team-kachow/P2210198_P2211174_P2216446/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yanis/team-kachow/P2210198_P2211174_P2216446 /home/yanis/team-kachow/P2210198_P2211174_P2216446 /home/yanis/team-kachow/P2210198_P2211174_P2216446/build /home/yanis/team-kachow/P2210198_P2211174_P2216446/build /home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles/doc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doc.dir/depend
 

@@ -1,7 +1,7 @@
 CMakeFiles/affichage.dir/src/ImageViewer.cpp.o: \
- /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/ImageViewer.cpp \
+ /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/ImageViewer.cpp \
  /usr/include/stdc-predef.h \
- /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/ImageViewer.h \
+ /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/ImageViewer.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
@@ -214,8 +214,8 @@ CMakeFiles/affichage.dir/src/ImageViewer.cpp.o: \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
- /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/Image.h \
- /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/Pixel.h \
+ /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/Image.h \
+ /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/Pixel.h \
  /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h \
  /usr/include/c++/11/bits/char_traits.h \

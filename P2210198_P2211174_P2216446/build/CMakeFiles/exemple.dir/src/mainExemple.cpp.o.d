@@ -1,8 +1,8 @@
 CMakeFiles/exemple.dir/src/mainExemple.cpp.o: \
- /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/mainExemple.cpp \
+ /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/mainExemple.cpp \
  /usr/include/stdc-predef.h \
- /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/Image.h \
- /home/raphale/dev/lifapcd/team-kachow/P2210198_P2211174_P2216446/src/Pixel.h \
+ /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/Image.h \
+ /home/yanis/team-kachow/P2210198_P2211174_P2216446/src/Pixel.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
