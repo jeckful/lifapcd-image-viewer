@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/affichage.dir/src/mainAffichage.cpp.o CMakeFiles/affichage.dir/src/Image.cpp.o CMakeFiles/affichage.dir/src/ImageViewer.cpp.o -o ../bin/affichage  -lSDL2 
