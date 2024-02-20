@@ -5,8 +5,8 @@ pages:
   # Définition du script qui sera exécuté dans le job
   script:
     # Mettre à jour la liste des paquets disponibles et installation
-    - apt update  
-    - apt install -y libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev libsdl2-mixer-dev libpng-dev libglew-dev cmake doxygen valgrind build-essential 
+    - apt-get update  
+    - apt-get install -y libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev libsdl2-mixer-dev libpng-dev libglew-dev cmake doxygen valgrind build-essential graphviz
 
     # Test de commandes python
     - python --version
@@ -26,6 +26,11 @@ pages:
 
     # Lancement du script
     #- cat evalModuleImage.py
+    - echo "=============================================================="
+    - echo "=============================================================="
+    - echo "=============================================================="
+    - echo "=============================================================="
+    - echo "=============================================================="
     - python evalModuleImage.py P1234567.tar.gz
 
 
@@ -35,4 +40,3 @@ pages:
       - public
   only:
     - main
-
