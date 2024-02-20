@@ -1,6 +1,0 @@
-/home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles/test.dir
-/home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles/exemple.dir
-/home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles/affichage.dir
-/home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles/doc.dir
-/home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles/edit_cache.dir
-/home/yanis/team-kachow/P2210198_P2211174_P2216446/build/CMakeFiles/rebuild_cache.dir
