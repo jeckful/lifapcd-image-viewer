@@ -1,4 +1,4 @@
-# Module_Image
+# lifapcd-image-viewer
 
 ## Description
 Ce projet implémente une classe `Image` permettant de manipuler des images au format PPM. Il inclut des fonctionnalités telles que :
