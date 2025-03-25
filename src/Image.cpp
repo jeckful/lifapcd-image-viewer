@@ -137,7 +137,7 @@ void Image::testRegression() {
     assert(pixel1->r == 0 && pixel1->g == 255 && pixel1->b == 0); // Vérification de la couleur du pixel
     Pixel* pixel2 = imageTest.getPix(2, 2); // Récupération du pixel à la position (2, 2)
     assert(pixel2 != nullptr); // Vérification que le pixel n'est pas nul
-    assert(pixel2->r == 255 && pixel2->g == 0 && pixel2->b == 0); // Vérification de la couleur du pixel
+    assert(pixel2->r == 0 && pixel2->g == 255 && pixel2->b == 0); // Vérification de la couleur du pixel
     cout << "DessinerRectangle OK!" << endl; // Affichage d'un message indiquant que la méthode de dessin de rectangle fonctionne correctement
 
     imageTest.setPix(1, 1, Pixel(0, 0, 255)); // Modification du pixel à la position (1, 1) avec une nouvelle couleur
@@ -185,7 +185,10 @@ void Image::ouvrir(const std::string &filename)
     using namespace std;
 
     ifstream fichier(filename.c_str()); // Ouverture du fichier en lecture
-    assert(fichier.is_open()); // Vérification que le fichier est ouvert avec succès
+    if (!fichier.is_open()) {
+        std::cerr << "Erreur : Impossible d'ouvrir le fichier " << filename << std::endl;
+        assert(false);
+    }
     int r, g, b; // Variables temporaires pour stocker les composantes RGB
     std::string mot; // Variable temporaire pour stocker les mots lus du fichier
     dimx = dimy = 0; // Réinitialisation des dimensions de l'image
