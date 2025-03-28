@@ -10,7 +10,7 @@ Le projet est divisé en plusieurs exécutables pour tester et démontrer les fo
 
 ## Structure du projet
 ```
-team-kachow/
+lifapcd-image-viewer/
 ├── bin/                # Contient les exécutables générés
 ├── data/               # Contient les fichiers PPM utilisés (images)
 ├── doc/                # Contient la documentation générée par Doxygen
